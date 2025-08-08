@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+           
+        }
+        div {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: relative;
+            margin-top: 110px;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+
+            width: 50%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            justify-content: center;
+            
+        }
+        button:hover {
+            background-color: #218838;
+            cursor: pointer;
+        }
+    </style>
+
+
 </head>
 <body>
-    
+    <div>
+        <h1>Cadastro de Usuários</h1>
+        <input type="text" placeholder="Nome Completo" id="nome">
+        <input type="text" placeholder="Email" id="email">
+        <input type="text" placeholder="Telefone" id="telefone">
+        <br>
+        <button id="cadastrar">Cadastrar</button>
+        <div id="mensagem"></div>
+    </div>
 </body>
 </html>
